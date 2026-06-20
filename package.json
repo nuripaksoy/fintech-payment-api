@@ -1,0 +1,39 @@
+{
+  "name": "fintech-payment-api",
+  "version": "1.0.0",
+  "description": "Production-ready payment gateway API with Stripe integration",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --runInBand --forceExit",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "keywords": [
+    "fintech",
+    "stripe",
+    "payment",
+    "api",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "clear": "^0.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "helmet": "^8.2.0",
+    "jest": "^30.4.2",
+    "nodemon": "^3.1.14",
+    "stripe": "^22.2.1",
+    "supertest": "^7.2.2",
+    "uuid": "^14.0.0"
+  }
+}
